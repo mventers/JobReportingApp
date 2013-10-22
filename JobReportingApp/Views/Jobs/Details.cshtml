@@ -1,0 +1,127 @@
+﻿@model JobReportingApp.Models.Job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Job</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AttendDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AttendDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AttendingTech)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AttendingTech)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StatusNow)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StatusNow)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OdModel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OdModel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OdSerial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OdSerial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdModel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdModel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdSerial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdSerial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.POP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.POP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PurchInv)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PurchInv)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DOP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DOP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Report)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Report)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StatusAfter)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StatusAfter)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Visits)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Visits)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Labour)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Labour)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SentEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SentEmail)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,130 @@
+﻿@model JobReportingApp.Models.Job
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Job</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AttendDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AttendDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AttendingTech)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AttendingTech)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StatusNow)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StatusNow)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OdModel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OdModel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OdSerial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OdSerial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdModel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdModel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdSerial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdSerial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.POP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.POP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PurchInv)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PurchInv)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DOP)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DOP)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Report)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Report)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StatusAfter)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StatusAfter)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Visits)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Visits)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Labour)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Labour)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SentEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SentEmail)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

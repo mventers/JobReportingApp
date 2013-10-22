@@ -1,0 +1,191 @@
+﻿@model JobReportingApp.Models.Job
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Job</legend>
+        <div class="divider"><p>Job Details</p></div>
+        
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.JobNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.JobNumber)
+            @Html.ValidationMessageFor(model => model.JobNumber)
+        </div>
+        </div>
+
+        <div class="rightpanel">
+            <div class="editor-label">
+            @Html.LabelFor(model => model.AttendingTech)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AttendingTech)
+            @Html.ValidationMessageFor(model => model.AttendingTech)
+        </div>
+        </div>
+
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AttendDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AttendDate)
+            @Html.ValidationMessageFor(model => model.AttendDate)
+        </div>
+        </div>
+
+        <div class="rightpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StatusNow)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StatusNow)
+            @Html.ValidationMessageFor(model => model.StatusNow)
+        </div>
+        </div>
+
+        <div class="divider"><p>Unit Details</p></div>
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OdModel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OdModel)
+            @Html.ValidationMessageFor(model => model.OdModel)
+        </div>
+        </div>
+
+        <div class="rightpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OdSerial)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OdSerial)
+            @Html.ValidationMessageFor(model => model.OdSerial)
+        </div>
+        </div>
+
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IdModel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IdModel)
+            @Html.ValidationMessageFor(model => model.IdModel)
+        </div>
+        </div>
+
+        <div class="rightpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IdSerial)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IdSerial)
+            @Html.ValidationMessageFor(model => model.IdSerial)
+        </div>
+        </div>
+
+        <div class="divider"><p>Purchase Details</p></div>
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.POP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.POP)
+            @Html.ValidationMessageFor(model => model.POP)
+        </div>
+        </div>
+
+        <div class="rightpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PurchInv)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PurchInv)
+            @Html.ValidationMessageFor(model => model.PurchInv)
+        </div>
+        </div>
+
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DOP)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DOP)
+            @Html.ValidationMessageFor(model => model.DOP)
+        </div>
+        </div>
+
+        <div class="divider"><p>Job Completion</p></div>
+        <div class="reportpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Report)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Report)
+            @Html.ValidationMessageFor(model => model.Report)
+        </div>
+        </div>
+        <div class="rightpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StatusAfter)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StatusAfter)
+            @Html.ValidationMessageFor(model => model.StatusAfter)
+        </div>
+        </div>
+
+        <div class="leftpanel">
+        <div class="editor-label">
+        @Html.LabelFor(model => model.SentEmail)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SentEmail)
+            @Html.ValidationMessageFor(model => model.SentEmail)
+        </div>
+        </div>
+
+        <div class="rightpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Labour)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Labour)
+            @Html.ValidationMessageFor(model => model.Labour)
+        </div>
+        </div>
+
+        <div class="leftpanel">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Visits)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Visits)
+            @Html.ValidationMessageFor(model => model.Visits)
+        </div>
+        </div>
+        
+    </fieldset>
+}
+
+<div class="submitpanel">
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+        <input type="submit" value="Save" />
+    </p>
+    
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
